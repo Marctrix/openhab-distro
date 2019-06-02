@@ -62,7 +62,9 @@ feature.openhab-model-runtime-all: \
 	bnd.identity;id='org.openhab.core.ui.icon',\
 	bnd.identity;id='org.openhab.transform.map',\
 	bnd.identity;id='org.openhab.ui.iconset.classic',\
-	bnd.identity;id='org.openhab.ui.restdocs'
+	bnd.identity;id='org.openhab.ui.restdocs',\
+	bnd.identity;id='org.openhab.binding.remoteboot',\
+	bnd.identity;id='org.apache.commons.codec'
 
 -runfw: org.eclipse.osgi
 -runee: JavaSE-1.8
@@ -122,7 +124,6 @@ feature.openhab-model-runtime-all: \
 	org.eclipse.jetty.websocket.common;version='[9.4.11,9.4.12)',\
 	org.eclipse.jetty.xml;version='[9.4.11,9.4.12)',\
 	org.glassfish.hk2.external.aopalliance-repackaged;version='[2.4.0,2.4.1)',\
-	org.glassfish.hk2.external.javax.inject;version='[2.4.0,2.4.1)',\
 	org.mapdb.mapdb;version='[1.0.9,1.0.10)',\
 	org.ops4j.pax.swissbox.optional.jcl;version='[1.8.2,1.8.3)',\
 	org.ops4j.pax.web.pax-web-api;version='[7.2.3,7.2.4)',\
@@ -208,4 +209,6 @@ feature.openhab-model-runtime-all: \
 	org.openhab.core.ui.icon;version='[2.5.0,2.5.1)',\
 	org.openhab.transform.map;version='[2.5.0,2.5.1)',\
 	org.openhab.ui.iconset.classic;version='[2.5.0,2.5.1)',\
-	org.openhab.ui.restdocs;version='[2.5.0,2.5.1)'
+	org.openhab.ui.restdocs;version='[2.5.0,2.5.1)',\
+	org.openhab.binding.remoteboot;version='[2.5.0,2.5.1)'
+-resolve: auto
